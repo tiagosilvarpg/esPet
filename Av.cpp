@@ -13,6 +13,7 @@ void screenInit(){
 void displayOn(bool on){
   pinMode(DISPLAY_PIN,OUTPUT);
   digitalWrite(DISPLAY_PIN,on?HIGH:LOW);
+  delay(10);
   tft.setRotation(SCREEN_ROTATION);
   tft.init();
 }
