@@ -624,7 +624,7 @@ class TFT_eSPI : public Print { friend class TFT_eSprite; // Sprite class has ac
 
            // Handle char arrays
            // Use with setTextDatum() to position string on TFT, and setTextPadding() to blank old displayed strings
-           drawString(const char *string, int32_t x, int32_t y, uint8_t font),  // Draw string using specified font number
+           F(const char *string, int32_t x, int32_t y, uint8_t font),  // Draw string using specified font number
            drawString(const char *string, int32_t x, int32_t y),                // Draw string using current font
            drawString(const String& string, int32_t x, int32_t y, uint8_t font),// Draw string using specified font number
            drawString(const String& string, int32_t x, int32_t y),              // Draw string using current font

@@ -21,9 +21,12 @@
   void drawText(const std::string& text,int x,int y);
   void drawText(const std::string& text,int x,int y,int color);
   void drawText(const std::string& text,int x,int y,int colora, int colorb);
+  void drawTile(int x,int y,int row, int col, bool flip = false);
   void fillRect(int x,int y, int w,int h,int color);
   void fillRect(int x,int y, int w,int h,std::vector<int> background);
+  void playSong(int song);
   void playNote(note_t note,int duration);
+  void muteSong();
   void drawSprite(int x, int y, std::vector<int> pixels, bool flip, int scale);
   void textFormat(int DATUM,int scale);
 #endif
